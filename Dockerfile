@@ -20,8 +20,7 @@ RUN userdel squeezeboxserver
 
 VOLUME /music /config
 
-# Standard LMS ports plus 4070 for Spotty plugin.
-EXPOSE 3443 3443/udp 9000 9090 4070
+EXPOSE 3443 3443/udp 9000 9090
 
 COPY entrypoint.sh /entrypoint.sh 
 RUN chmod 755 /entrypoint.sh

@@ -1,5 +1,5 @@
 # Docker Container for Logitech Media Server
-This Docker Container runs Logitech Media Server. It is based on the container created by larks. It was modified to run version 7.9.2 nightly of the server as well as opening the required port for Spotty plugin.
+This Docker Container runs Logitech Media Server. It is based on the container created by larks. It was modified to run version 7.9.2 nightly of the server.
 
 ## Usage
 You will find below examples of how to start the container.
@@ -44,6 +44,9 @@ services:
     # uncomment the following lines if using the MusicIP Container
     # depends_on :
     #   - musicip
+    # Some plugins require the container to run in host mode (e.g. Spotty,
+    # Shairtunes 2W). Uncomment the following line if required.
+    # network_mode: "host"
 ```
 ## Parameters
 |**Parameter**                |**Description**                                                 |
