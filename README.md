@@ -18,14 +18,14 @@ docker run -d \
   -v <path to music>:/music \
   -v <path to data>:/config \
   --restart unless-stopped \
-  ptoulouse/lms
+  ptoulouse/logitechmediaserver
 ```
 ### docker-compose
 ```
 version: '3'
 services:
   lms:
-    image: ptoulouse/lms
+    image: ptoulouse/logitechmediaserver
     container_name: lms
     environment:
       - PUID=1000
