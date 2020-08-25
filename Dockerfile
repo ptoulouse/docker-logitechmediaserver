@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
-ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.2&revision=1&geturl=1&os=deb
+ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.0&revision=1&geturl=1&os=deb
 
 RUN apt-get update && \
     apt-get -y install curl wget faad flac lame sox libio-socket-ssl-perl libcrypt-openssl-rsa-perl tzdata && \
