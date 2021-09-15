@@ -1,3 +1,5 @@
+**WARNING : THIS REPOSITORY IS DEPRECATED** - I am now using [lmscommunity/logitechmediaserver](https://hub.docker.com/r/lmscommunity/logitechmediaserver)
+
 # Docker Container for Logitech Media Server
 This Docker Container runs Logitech Media Server. It is based on the container created by larks. It was modified to run version 7.9.2 nightly of the server.
 
